@@ -1,0 +1,120 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_cant_do_any_better
+
+- story: track shipment positive path1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: track_shipment
+  - action: utter_know_orderNo
+  - intent: affirm
+  - action: utter_ask_orderNo
+  - intent: order_number
+  - action: action_fetch_data
+  - action: utter_slot_values
+  - intent: thankyou
+  - action: utter_no_worries
+  # - action: utter_goodbye
+
+
+- story: track shipment positive path2
+  steps:
+  - intent: track_shipment
+  - action: utter_know_orderNo
+  - intent: affirm
+  - action: utter_ask_orderNo
+  - intent: order_number
+  - action: action_fetch_data
+  - action: utter_slot_values
+  - intent: thankyou
+  - action: utter_no_worries
+  # - action: utter_goodbye
+
+- story: track shipment negative path1
+  steps:
+  - intent: track_shipment
+  - action: utter_know_orderNo
+  - intent: deny
+  - action: utter_cant_help
+  - action: utter_goodbye
+
+- story: track shipment negative path2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: track_shipment
+  - action: utter_know_orderNo
+  - intent: deny
+  - action: utter_cant_help
+  - action: utter_goodbye
+
+- story: track shipment positive path3
+  steps:
+  - intent: track_shipment
+  - action: utter_know_orderNo
+  - intent: affirm
+  - action: utter_ask_orderNo
+  - intent: order_number
+  # - action: utter_give_me_a_sec
+  - action: action_fetch_data
+  - action: utter_slot_values
+  - intent: change_details
+  - action: utter_visit_web
+
+- story: track shipment positive path4
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: track_shipment
+  - action: utter_know_orderNo
+  - intent: affirm
+  - action: utter_ask_orderNo
+  - intent: order_number
+  - action: action_fetch_data
+  - action: utter_slot_values
+  - intent: change_details
+  - action: utter_visit_web
+
+- story: track shipment positive path5
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: track_shipment
+  - action: utter_know_orderNo
+  - intent: deny
+  - action: utter_cant_help
+  - intent: track_shipment
+  - action: utter_know_orderNo
+  - intent: affirm
+  - action: utter_ask_orderNo
+  - intent: order_number
+  - action: action_fetch_data
+  - action: utter_slot_values

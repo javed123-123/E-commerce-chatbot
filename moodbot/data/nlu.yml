@@ -1,0 +1,255 @@
+version: "2.0"
+
+nlu:
+# - intent: greet
+#   examples: |
+#     - hey
+#     - hello
+#     - hi
+#     - hello there
+#     - good morning
+#     - good evening
+#     - moin
+#     - hey there
+#     - let's go
+#     - hey dude
+#     - goodmorning
+#     - goodevening
+#     - good afternoon
+
+# - intent: goodbye
+#   examples: |
+#     - good afternoon
+#     - cu
+#     - good by
+#     - cee you later
+#     - good night
+#     - bye
+#     - goodbye
+#     - have a nice day
+#     - see you around
+#     - bye bye
+#     - see you later
+
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+
+# - intent: deny
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+# - intent: bot_challenge
+#   examples: |
+#     - are you a bot?
+#     - are you a human?
+#     - am I talking to a bot?
+#     - am I talking to a human?
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - yep
+    - y
+    - indeed
+    - of course I know
+    - of course
+    - yeah
+    - you betcha
+    - yes I do
+    - yes I know
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - I don't
+    - I don't think so
+    - no way
+    - not really
+    - I don't know
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: track_shipment
+  examples: |
+    - I want to track an order.
+    - I want you to track an order.
+    - I want you to track another order.
+    - I want to know the shipment status of an order.
+    - I want you to tell me the shipment status of an order.
+    - can you track an order?
+    - can you track an another order?
+    - can you tell the shipment status of an another order?
+    - can you track a shipment?
+    - track a shipment.
+    - okay got it. Can you track the shipment now
+    - found it. track it now
+    - wait found it. Can you track now
+    - let me see if I have one.
+    - got the orderNo. Can you track now
+
+# - intent: inform_userId
+#   examples:  |
+#     - my (userId) is [java200]
+#     - [kfui890] is my (userId))
+#     - (userId): [5678hghgh]
+
+- intent: order_number
+  examples:  |
+    - 20265
+    - D1001
+    - D1004
+    - 20637
+    - 20546
+    - 21078
+    - 21057
+    - F1004
+    - F1003
+
+- intent: thankyou
+  examples:  |
+    - thank you
+    - okay great thanks
+    - thanks bye
+    - thanks
+
+- intent: out_of_scope
+  examples:  |
+    - tell me the weather
+    - how's the climate today
+    - tell me a joke
+    - I want to order a pizza
+    - order me a pizza
+    - order something for me
+    - how has this universe come to an existance.
+    - bake me a cake
+    - who is the current wimbledon champion
+
+- intent: change_details
+  examples: |
+    - Can I change the delivery date
+    - Can I change the location of the delivery
+    - can I resechedule my delivery date
+    - can I postpone the delivery date
+    - I want to change the location of delivery
+    - I want to change the delivery date
+    - I want to resechedule my delivery date
+    - I want to postpone the delivery date
+    - reschedule the delivery date
+    - postpone the delivery date
+    - change the delivery location
